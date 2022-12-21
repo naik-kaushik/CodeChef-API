@@ -61,6 +61,6 @@ app.get("/api/:username", (req, res) => {
 });
 //TODO
 const port = process.env.PORT;
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log("Server started on port", port);
 });
