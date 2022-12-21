@@ -5,6 +5,10 @@ const app = express();
 
 app.use(express.static("public"));
 let username = "";
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/Welcome.html");
+});
 app.get("/api/:username", (req, res) => {
   username = req.params.username;
   axios.get("https://codechef.com/users/" + username).then(function (response) {
@@ -52,20 +56,11 @@ app.get("/api/:username", (req, res) => {
     ).each((idx, el) => {
       newUser.div = $(el).text().slice(1, -1);
     });
-
-    // getting wa,ac,tle
-    console.log(
-      $(
-        `#highcharts-zzzroz2-49 > svg > g.highcharts-data-labels.highcharts-series-0.highcharts-pie-series.highcharts-tracker > g.highcharts-label.highcharts-data-label.highcharts-data-label-color-4 > text > tspan`
-      ).each((idx, el) => {
-        console.log($(el).text());
-      })
-    );
     res.send(newUser);
   });
 });
 //TODO
 const port = process.env.PORT;
-app.listen(port, function () {
+app.listen(3000, function () {
   console.log("Server started on port", port);
 });
