@@ -25,4 +25,4 @@ If you make an call for username **naik_kaushik** you will get following sample 
        "div": "Div 3"
     }
 
-[Click Here For API Page](https://bit.ly/codechef-api)
+[Click Here For API Page](https://codechef-api.onrender.com/)
