@@ -4,10 +4,9 @@ This API is built using JavaScript. To Know more about it make sure to visit the
 
 # How to use this API ?
 
-In the URL panel, keep the existing URL as it is and then append endpoints as follows:
-https://codechef-api.onrender.com/api/naik_kaushik
 
-Place your Codechef username after **/api/** (without angular brackets)
+
+Place your Codechef username after **/api/** 
 example : https://codechef-api.onrender.com/api/naik_kaushik
 
 # Response
