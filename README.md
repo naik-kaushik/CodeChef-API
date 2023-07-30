@@ -8,7 +8,7 @@ In the URL panel, keep the existing URL as it is and then append endpoints as fo
 >{existing-url}/**api**/**\<your-codechef-username\>**
 
 Place your Codechef username after **/api/** (without angular brackets)
-example : {existing-url}/**api**/**naik_kaushik**
+example : https://codechef-api.onrender.com/**api**/**naik_kaushik**
 
 # Response
 If you make an call for username **naik_kaushik** you will get following sample response :
