@@ -56,7 +56,7 @@ app.get("/api/:username", (req, res) => {
     ).each((idx, el) => {
       newUser.div = $(el).text().slice(1, -1);
     });
-    res.send(newUser);
+    res.status(200).json(newUser);
   });
 });
 //TODO
